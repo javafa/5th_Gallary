@@ -17,6 +17,9 @@ import java.util.List;
 
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.Holder>{
     List<Item> data;
+    public GalleryAdapter(List<Item> data){
+        this.data = data;
+    }
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
